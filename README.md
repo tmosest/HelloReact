@@ -1,4 +1,5 @@
 # HelloReact
+Simple repository to play around with React Native code.
 
 ## Useful Links:
 This sections contains links that I have found to be useful.
