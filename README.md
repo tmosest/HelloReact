@@ -12,6 +12,8 @@ This sections contains links that I have found to be useful.
 - [Structuring Your Project](https://medium.com/the-react-native-log/organizing-a-react-native-project-9514dfadaa0)
 - [Platform Specific Code](https://facebook.github.io/react-native/docs/platform-specific-code.html)
 - [Props](https://facebook.github.io/react-native/docs/props.html)
+- [Redux](http://redux.js.org/index.html)
+- [States](https://facebook.github.io/react-native/docs/state.html#content)
 - [Typescript](https://raygun.com/blog/react-native-typescript/)
 
 ### Coding Style Guides

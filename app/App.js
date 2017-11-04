@@ -3,7 +3,6 @@
  * https://github.com/facebook/react-native
  * @flow
  */
-
 import React, { Component } from 'react';
 import {
   Platform,
@@ -11,9 +10,11 @@ import {
   Text,
   View
 } from 'react-native';
+
 import  { Banana } from './components/Banana/Banana';
-import  { HelloWorld } from './components/HelloWorld/HelloWorld';
+import { Blink } from './components/Blink/Blink';
 import { Greetings } from './components/Greetings/Greetings';
+import  { HelloWorld } from './components/HelloWorld/HelloWorld';
 
 
 const instructions = Platform.select({
@@ -32,7 +33,7 @@ export default class App extends Component<{}> {
             <Greetings name="Tyler"/> Welcome to React Native!
         </Text>
         <Text style={styles.instructions}>
-          To get started, edit App.js
+            <Blink text="To get started, edit App.js"/>
         </Text>
         <Text style={styles.instructions}>
           {instructions}
