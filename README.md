@@ -10,6 +10,12 @@ This sections contains links that I have found to be useful.
 - [Getting Started](https://facebook.github.io/react-native/docs/getting-started.html)
 - [Common Components](https://facebook.github.io/react-native/docs/components-and-apis.html)
 - [Structuring Your Project](https://medium.com/the-react-native-log/organizing-a-react-native-project-9514dfadaa0)
+
+### General Info
+- [Flex Box](https://facebook.github.io/react-native/docs/flexbox.html)
+- [Native Elements](https://github.com/react-native-training/react-native-elements)
+- [Navigating Between Screens](https://facebook.github.io/react-native/docs/navigation.html)
+- [Navigation Native Plugin](https://wix.github.io/react-native-navigation/#/installation-ios)
 - [Platform Specific Code](https://facebook.github.io/react-native/docs/platform-specific-code.html)
 - [Props](https://facebook.github.io/react-native/docs/props.html)
 - [Redux](http://redux.js.org/index.html)
