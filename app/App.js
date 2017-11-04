@@ -11,7 +11,10 @@ import {
   Text,
   View
 } from 'react-native';
+import  { Banana } from './components/Banana/Banana';
 import  { HelloWorld } from './components/HelloWorld/HelloWorld';
+import { Greetings } from './components/Greetings/Greetings';
+
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -26,7 +29,7 @@ export default class App extends Component<{}> {
       <View style={styles.container}>
         <HelloWorld/>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+            <Greetings name="Tyler"/> Welcome to React Native!
         </Text>
         <Text style={styles.instructions}>
           To get started, edit App.js
@@ -34,6 +37,7 @@ export default class App extends Component<{}> {
         <Text style={styles.instructions}>
           {instructions}
         </Text>
+        <Banana/>
       </View>
     );
   }

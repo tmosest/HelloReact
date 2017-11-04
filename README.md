@@ -1,6 +1,8 @@
 # HelloReact
 Simple repository to play around with React Native code.
 
+To launch the code to the iPhone simulator just run: ```react-native run-ios```
+
 ## Useful Links:
 This sections contains links that I have found to be useful.
 
@@ -10,6 +12,7 @@ This sections contains links that I have found to be useful.
 - [Structuring Your Project](https://medium.com/the-react-native-log/organizing-a-react-native-project-9514dfadaa0)
 - [Platform Specific Code](https://facebook.github.io/react-native/docs/platform-specific-code.html)
 - [Props](https://facebook.github.io/react-native/docs/props.html)
+- [Typescript](https://raygun.com/blog/react-native-typescript/)
 
 ### Coding Style Guides
 - [airbnb](https://github.com/airbnb/javascript/tree/master/react)
