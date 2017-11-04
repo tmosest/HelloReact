@@ -24,10 +24,15 @@ export function startApp() {
                 }
             },
             {
+                label: 'Sketch',
+                screen: 'screens.Sketch',
+                title: 'Sketch Page'
+            },
+            {
                 label: 'Image Feed',
                 screen: 'screens.ImageFeed', // this is a registered name for a screen
                 title: 'Image Feed'
-            }
+            },
         ]
     });
 }

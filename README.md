@@ -19,6 +19,7 @@ This sections contains links that I have found to be useful.
 - [Platform Specific Code](https://facebook.github.io/react-native/docs/platform-specific-code.html)
 - [Props](https://facebook.github.io/react-native/docs/props.html)
 - [Redux](http://redux.js.org/index.html)
+- [Sketch](https://github.com/jgrancher/react-native-sketch)
 - [States](https://facebook.github.io/react-native/docs/state.html#content)
 - [Typescript](https://raygun.com/blog/react-native-typescript/)
 

@@ -3490,6 +3490,12 @@ react-native-navigation@^1.1.257:
   dependencies:
     lodash "4.x.x"
 
+react-native-sketch@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/react-native-sketch/-/react-native-sketch-1.0.1.tgz#6610c197878cbf9dec6e79295af8925467769e75"
+  dependencies:
+    prop-types "^15.5.10"
+
 react-native-tab-view@^0.0.70:
   version "0.0.70"
   resolved "https://registry.yarnpkg.com/react-native-tab-view/-/react-native-tab-view-0.0.70.tgz#1dd2ded32acd0cb6bfef38d26e53675db733b37b"
