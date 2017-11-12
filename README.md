@@ -12,10 +12,14 @@ This sections contains links that I have found to be useful.
 - [Structuring Your Project](https://medium.com/the-react-native-log/organizing-a-react-native-project-9514dfadaa0)
 
 ### General Info
+- [Bluetooth](https://polidea.github.io/react-native-ble-plx/#service)
+- [File Upload JS](https://github.com/g6ling/React-Native-Tips/tree/master/How_to_upload_photo%2Cfile_in%20react-native)
+- [File Upload React Native FS](https://github.com/itinance/react-native-fs)
 - [Flex Box](https://facebook.github.io/react-native/docs/flexbox.html)
 - [Native Elements](https://github.com/react-native-training/react-native-elements)
 - [Navigating Between Screens](https://facebook.github.io/react-native/docs/navigation.html)
 - [Navigation Native Plugin](https://wix.github.io/react-native-navigation/#/installation-ios)
+- [Networking](https://facebook.github.io/react-native/docs/network.html)
 - [Platform Specific Code](https://facebook.github.io/react-native/docs/platform-specific-code.html)
 - [Props](https://facebook.github.io/react-native/docs/props.html)
 - [Redux](http://redux.js.org/index.html)

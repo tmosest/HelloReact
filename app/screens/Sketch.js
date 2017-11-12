@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { Alert, Button, StyleSheet, View } from 'react-native';
 import Sketch from 'react-native-sketch';
+// Required for file upload!
+var RNFS = require('react-native-fs');
+
 
 export class MyCanvas extends Component {
     clear = () => {
@@ -9,23 +12,56 @@ export class MyCanvas extends Component {
 
     save = () => {
         this.sketch.save().then(({ path }) => {
-            console.log('Hitting Server with: ' + path);
-            fetch('http://localhost:3000/params', {
+
+            var uploadURL = 'http://localhost:3000/upload';  //'https://requestb.in/pzt2rppz';
+
+            console.log('Hitting Server ' + uploadURL + ' with: ' + path);
+
+            var files = [
+                {
+                    name: 'image',
+                    filename: 'image.png',
+                    filepath: path,
+                    filetype: 'image/png'
+                }
+            ];
+
+            var uploadBegin = (response) => {
+                var jobId = response.jobId;
+                console.log('UPLOAD HAS BEGUN! JobId: ' + jobId);
+            };
+
+            var uploadProgress = (response) => {
+                var percentage = Math.floor((response.totalBytesSent/response.totalBytesExpectedToSend) * 100);
+                console.log('UPLOAD IS ' + percentage + '% DONE!');
+            };
+
+            // upload files
+            RNFS.uploadFiles({
+                toUrl: uploadURL,
+                files: files,
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json',
-                    'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({
-                    path: path,
-                })
-            }).then((response) => response.json())
-                .then(function(response) {
-                    Alert.alert(JSON.stringify(response));
-                })
-                .catch(function(error) {
-                   Alert.alert('Error: ' + error);
-                });
+                fields: {
+                    name: 'image',
+                    type: 'file',
+                },
+                begin: uploadBegin,
+                progress: uploadProgress
+            }).promise.then((response) => {
+                if (response.statusCode == 200) {
+                    console.log('FILES UPLOADED!'); // response.statusCode, response.headers, response.body
+                } else {
+                    console.log('SERVER ERROR');
+                }
+            }).catch((err) => {
+                if(err.description === "cancelled") {
+                    // cancelled by user
+                }
+                console.log(err);
+            });
 
         });
     };
